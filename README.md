@@ -2,6 +2,9 @@
 
 This Flutter plugin requests the location permission "Always" on iOS and retrieves this permission's status.
 
+https://user-images.githubusercontent.com/50987412/156553668-758389fc-a206-492a-9ef6-e590f7f8df3c.mp4
+
+
 ## Setting up
 
 Make sure you have added the following keys to your `Info.plist` before installing this plugin:
