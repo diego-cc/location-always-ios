@@ -23,7 +23,7 @@ class PermissionStatusResult {
     return PermissionStatusResult(
       success: map['success'] as bool?,
       message: map['message'] is String?
-          ? PermissionStatus.fromString(map['message'])
+          ? LocationPermissionStatusIOS.fromString(map['message'])
           : null,
       error: map['error'] as String?,
     );

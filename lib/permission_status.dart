@@ -1,4 +1,4 @@
-abstract class PermissionStatus {
+abstract class LocationPermissionStatusIOS {
   static const String authorizedAlways = 'authorizedAlways';
   static const String authorizedWhenInUse = 'authorizedWhenInUse';
   static const String authorized = 'authorized';
@@ -8,17 +8,17 @@ abstract class PermissionStatus {
 
   static String? fromString(String? status) {
     switch (status) {
-      case PermissionStatus.authorizedAlways:
+      case LocationPermissionStatusIOS.authorizedAlways:
         return 'Always';
-      case PermissionStatus.authorizedWhenInUse:
+      case LocationPermissionStatusIOS.authorizedWhenInUse:
         return 'While using the app';
-      case PermissionStatus.authorized:
+      case LocationPermissionStatusIOS.authorized:
         return 'Authorized';
-      case PermissionStatus.restricted:
+      case LocationPermissionStatusIOS.restricted:
         return 'Ask next time or when I share';
-      case PermissionStatus.denied:
+      case LocationPermissionStatusIOS.denied:
         return 'Never';
-      case PermissionStatus.notDetermined:
+      case LocationPermissionStatusIOS.notDetermined:
         return 'Not determined';
       default:
         return status;
