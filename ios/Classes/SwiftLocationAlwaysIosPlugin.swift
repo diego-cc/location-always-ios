@@ -33,7 +33,7 @@ public class SwiftLocationAlwaysIosPlugin: NSObject, FlutterPlugin, CLLocationMa
               break
           case "requestLocationAlwaysPermission":
               // Beware: you CANNOT request this permission without granting "when in use" first
-              if (authorisationStatus != .authorizedWhenInUse) {
+              if (authorisationStatus != .authorizedWhenInUse && authorisationStatus != .authorizedAlways) {
                 result(response(success: false, error: "\"Location When In Use\" has not been granted yet."))
               } else {
                 locationManager?.requestAlwaysAuthorization()
